@@ -6,6 +6,9 @@ const app = express();
 // Mongo connect
 const mongoose = require('./DB/conn')
 body = require('body-parser')
+const cors = require('cors')
+NODE_ENV === "product" ? app.use(cors()) : app.use(cors())
+app.use(cors())
 
 app.use(body.urlencoded({ extended: false }))
 app.use(body.json())
