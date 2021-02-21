@@ -18,6 +18,6 @@ app.get('/', (req, res) => {
     res.send('navigate to /rsvp to see current list')
 })
 
-app.listen(3001, () => {
+app.listen(process.env.PORT || 3001, () => {
     console.log("Server is up")
 })
