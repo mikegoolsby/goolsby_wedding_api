@@ -15,7 +15,7 @@ const rsvpController = require('./controllers/rsvp.js');
 app.use('/rsvp', rsvpController)
 
 app.get('/', (req, res) => {
-    res.send('Server up!')
+    res.send('navigate to /rsvp to see current list')
 })
 
 app.listen(3001, () => {
