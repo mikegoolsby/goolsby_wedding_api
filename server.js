@@ -20,6 +20,9 @@ app.use('/rsvp', rsvpController)
 const guestListController = require('./controllers/guestList')
 app.use('/guestlist', guestListController)
 
+const thingsToDoController = require('./controllers/thingsToDo')
+app.use('/thingstodo', thingsToDoController)
+
 app.get('/', (req, res) => {
     res.send('navigate to /guestlist to see current data')
 })
