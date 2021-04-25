@@ -17,8 +17,11 @@ app.use(body.json())
 const rsvpController = require('./controllers/rsvp.js');
 app.use('/rsvp', rsvpController)
 
+const guestListController = require('./controllers/guestList')
+app.use('/guestlist', guestListController)
+
 app.get('/', (req, res) => {
-    res.send('navigate to /rsvp to see current list')
+    res.send('navigate to /guestlist to see current data')
 })
 
 app.listen(process.env.PORT || 3001, () => {
