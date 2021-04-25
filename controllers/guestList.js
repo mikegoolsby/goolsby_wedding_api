@@ -1,6 +1,6 @@
 const express = require('express')
 const list = express.Router()
-const guestList = require('../models/rsvp.js')
+const guestList = require('../models/guestList')
 
 //Index
 
